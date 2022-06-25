@@ -1,0 +1,25 @@
+/* 
+FONTS:
+font-family: 'Cinzel', serif;
+font-family: 'Gloria Hallelujah', cursive;
+*/
+/* IMPORTS */
+
+@import url(navigation.css);
+@import url(sidebar.css);
+/** GLOBAL **/
+html {
+  /* 1rem will be equal to 15px */
+  /* 15 / 16 = 0.9375 * 100 = 93.75 */
+  /* this will compute to 15px */
+  font-size: 93.75%;
+  box-sizing: border-box;
+}
+
+body {
+  /* get rid of default margin and padding */
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}

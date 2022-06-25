@@ -1,0 +1,99 @@
+/* NAVBAR */
+
+/* SIDEBAR */
+aside {
+  width: 7rem; /* height needs to be stretched
+  down the entire page. When position is fixed, the 100% will be relative to the
+  viewport. */
+  height: 100%;
+  background-color: rgba(28, 8, 206, 0.8);
+  /*
+  position fixed takes the element out of normal flow and keeps it in a fixed
+  position with regards to the viewport */
+  position: fixed; /* Flexing the side
+  bar */
+  display: flex;
+  flex-direction: column;
+
+  /* space out all the 3 elements of
+the side bar */
+  justify-content: space-between;
+  align-items: center;
+}
+/* class = socials-icon-list */
+aside > ul {
+  /* remove the extra margin and padding from
+  unordered list */
+  margin: 0;
+  padding: 0;
+
+  /* remove bullet points */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* social links */
+aside > ul i {
+  font-size: 2rem;
+  color: rgb(12, 150, 16);
+}
+
+/* social link hover */
+aside > ul i:hover {
+  color: rgb(12, 250, 100);
+  transition: color 0.5s;
+}
+.menu-icon {
+  /* width: 1.5rem; height: 1.5rem; background-color: rgba(10, 150,
+240, 0.9); */
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* transition first and third
+menu lines when hovering over the menu icon */
+.menu-icon:hover .line {
+  width: 2rem;
+  background-color: rgb(10, 170, 200);
+  transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Create menu lines */
+.line {
+  height: 0.3rem;
+  width: 2rem;
+  background-color: rgb(10, 106, 167);
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+}
+
+/* Make the
+line 1 and line 3 of the menu icon shorter */
+.line-1,
+.line-3 {
+  width: 1.4rem;
+}
+aside > div > p {
+  margin-bottom: 2rem;
+  color: rgb(12, 200, 100);
+  font-size: 1.2rem;
+  animation: bright-dim 3s alternate infinite;
+}
+
+/* animation for the year */
+@keyframes bright-dim {
+  0% {
+    color: rgb(0, 0, 16);
+  }
+  100% {
+    color: rgb(12, 200, 100);
+  }
+}
+
+/* End of SIDEBAR */
+
+/* End of SIDE NAVBAR */
